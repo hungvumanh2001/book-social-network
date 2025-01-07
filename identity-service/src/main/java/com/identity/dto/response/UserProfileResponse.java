@@ -1,4 +1,4 @@
-package com.profile.dto.response;
+package com.identity.dto.response;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserProfileReponse {
+public class UserProfileResponse {
     String id;
     String firstName;
     String lastName;
