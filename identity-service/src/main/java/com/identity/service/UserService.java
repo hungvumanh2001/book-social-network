@@ -9,6 +9,7 @@ import com.identity.mapper.ProfileMapper;
 import com.identity.repository.RoleRepository;
 import com.identity.repository.UserRepository;
 import com.identity.repository.httpclient.ProfileClient;
+import org.apache.commons.fileupload.RequestContext;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -26,6 +27,8 @@ import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Service
 @RequiredArgsConstructor
