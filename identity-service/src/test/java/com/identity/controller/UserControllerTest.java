@@ -2,9 +2,6 @@ package com.identity.controller;
 
 import java.time.LocalDate;
 
-import com.identity.dto.request.UserCreationRequest;
-import com.identity.dto.response.UserResponse;
-import com.identity.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
@@ -21,6 +18,9 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.identity.dto.request.UserCreationRequest;
+import com.identity.dto.response.UserResponse;
+import com.identity.service.UserService;
 
 import lombok.extern.slf4j.Slf4j;
 

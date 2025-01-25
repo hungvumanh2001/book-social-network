@@ -2,8 +2,9 @@ package com.identity.dto.request;
 
 import java.time.LocalDate;
 
-import com.identity.validator.DobConstraint;
 import jakarta.validation.constraints.Size;
+
+import com.identity.validator.DobConstraint;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

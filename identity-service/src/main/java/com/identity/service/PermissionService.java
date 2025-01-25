@@ -2,13 +2,13 @@ package com.identity.service;
 
 import java.util.List;
 
-import com.identity.repository.PermissionRepository;
 import org.springframework.stereotype.Service;
 
 import com.identity.dto.request.PermissionRequest;
 import com.identity.dto.response.PermissionResponse;
 import com.identity.entity.Permission;
 import com.identity.mapper.PermissionMapper;
+import com.identity.repository.PermissionRepository;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

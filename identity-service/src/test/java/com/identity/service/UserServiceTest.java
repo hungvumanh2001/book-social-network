@@ -8,11 +8,6 @@ import static org.mockito.Mockito.when;
 import java.time.LocalDate;
 import java.util.Optional;
 
-import com.identity.dto.request.UserCreationRequest;
-import com.identity.dto.response.UserResponse;
-import com.identity.entity.User;
-import com.identity.exception.AppException;
-import com.identity.repository.UserRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,6 +16,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.TestPropertySource;
+
+import com.identity.dto.request.UserCreationRequest;
+import com.identity.dto.response.UserResponse;
+import com.identity.entity.User;
+import com.identity.exception.AppException;
+import com.identity.repository.UserRepository;
 
 @SpringBootTest
 @TestPropertySource("/test.properties")

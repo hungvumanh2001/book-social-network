@@ -3,32 +3,29 @@ package com.identity.service;
 import java.util.HashSet;
 import java.util.List;
 
-import com.identity.constant.PredefinedRole;
-import com.identity.exception.AppException;
-import com.identity.mapper.ProfileMapper;
-import com.identity.repository.RoleRepository;
-import com.identity.repository.UserRepository;
-import com.identity.repository.httpclient.ProfileClient;
-import org.apache.commons.fileupload.RequestContext;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.identity.constant.PredefinedRole;
 import com.identity.dto.request.UserCreationRequest;
 import com.identity.dto.request.UserUpdateRequest;
 import com.identity.dto.response.UserResponse;
 import com.identity.entity.Role;
 import com.identity.entity.User;
+import com.identity.exception.AppException;
 import com.identity.exception.ErrorCode;
+import com.identity.mapper.ProfileMapper;
 import com.identity.mapper.UserMapper;
+import com.identity.repository.RoleRepository;
+import com.identity.repository.UserRepository;
+import com.identity.repository.httpclient.ProfileClient;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
 @Service
 @RequiredArgsConstructor
