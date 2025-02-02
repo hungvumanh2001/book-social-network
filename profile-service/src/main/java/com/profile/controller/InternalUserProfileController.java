@@ -1,9 +1,10 @@
 package com.profile.controller;
 
+import org.springframework.web.bind.annotation.*;
+
 import com.profile.dto.request.ProfileCreationRequest;
 import com.profile.dto.response.UserProfileResponse;
 import com.profile.service.UserProfileService;
-import org.springframework.web.bind.annotation.*;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
