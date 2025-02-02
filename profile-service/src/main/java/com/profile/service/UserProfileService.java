@@ -2,13 +2,13 @@ package com.profile.service;
 
 import java.util.List;
 
+import com.profile.entity.UserProfile;
+import com.profile.mapper.UserProfileMapper;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
 import com.profile.dto.request.ProfileCreationRequest;
 import com.profile.dto.response.UserProfileResponse;
-import com.profile.entity.UserProfile;
-import com.profile.mapper.UserProfileMapper;
 import com.profile.repository.UserProfileRepository;
 
 import lombok.AccessLevel;

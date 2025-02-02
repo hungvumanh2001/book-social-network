@@ -1,4 +1,4 @@
-package com.profile.configuration;
+package com.notification.configuration;
 
 import java.io.IOException;
 
@@ -10,8 +10,8 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.profile.dto.ApiResponse;
-import com.profile.exception.ErrorCode;
+import com.notification.dto.response.ApiResponse;
+import com.notification.exception.ErrorCode;
 
 public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
     @Override

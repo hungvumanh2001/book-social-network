@@ -1,4 +1,4 @@
-package com.profile.exception;
+package com.notification.exception;
 
 import java.util.Map;
 import java.util.Objects;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.profile.dto.ApiResponse;
+import com.notification.dto.response.ApiResponse;
 
 import lombok.extern.slf4j.Slf4j;
 

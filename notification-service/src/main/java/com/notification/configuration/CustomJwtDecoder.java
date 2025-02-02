@@ -1,4 +1,4 @@
-package com.profile.configuration;
+package com.notification.configuration;
 
 import java.text.ParseException;
 
